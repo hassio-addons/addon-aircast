@@ -76,6 +76,7 @@ Example add-on configuration:
 ```json
 {
   "log_level": "info",
+  "address": "192.168.1.234",
   "latency_rtp": 5000,
   "latency_http": 0,
   "drift": true
@@ -103,6 +104,13 @@ the `log_level` is set to `info`, which is the recommended setting unless
 you are troubleshooting.
 
 These log level also affects the log levels of AirCast server.
+
+### Option: `address`
+
+This option allows you to specify the IP address the AirCast server needs to
+bind to. It will automatically detect the interface to use when this option is
+left empty. Nevertheless, it might get detected wrong (e.g., in case you have
+multiple network interfaces).
 
 ### Option: `latency_rtp`
 
