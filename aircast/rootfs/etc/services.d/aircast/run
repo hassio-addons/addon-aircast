@@ -1,0 +1,46 @@
+#!/usr/bin/with-contenv bash
+# ==============================================================================
+# Community Hass.io Add-ons: AirCast
+# Runs the AirCast server
+# ==============================================================================
+# shellcheck disable=SC1091
+source /usr/lib/hassio-addons/base.sh
+
+declare -a options
+
+hass.log.info 'Starting the AirCast server'
+
+# Bind to a specific interface
+if hass.config.has_value 'address'; then
+    options+=(-b "$(hass.config.get 'address')")
+fi
+
+# Find the matching AirCast log level
+case "$(hass.string.lower "$(hass.config.get 'log_level')")" in
+    all|trace)
+        options+=(-d 'all=sdebug')
+        ;;
+    debug)
+        options+=(-d 'all=debug')
+        ;;
+    info|notice)
+        options+=(-d 'all=info')
+        ;;
+    warning)
+        options+=(-d 'all=warn')
+        ;;
+    error|fatal|off)
+        options+=(-d 'all=error')
+        ;;
+esac
+
+# Set latency
+options+=(-l "$(hass.config.get 'latency_rtp'):$(hass.config.get 'latency_http')")
+
+# Drift mode?
+if hass.config.true 'drift'; then
+    options+=(-r)
+fi
+
+# Run the AirCast server
+exec aircast "${options[@]}"
