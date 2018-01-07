@@ -1,4 +1,4 @@
-ARG BUILD_FROM=hassioaddons/debian-base-amd64:0.2.0
+ARG BUILD_FROM=hassioaddons/debian-base-amd64:0.2.1
 FROM ${BUILD_FROM}
 
 # Setup base system
