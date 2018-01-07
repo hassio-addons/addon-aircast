@@ -10,6 +10,9 @@ declare -a options
 
 hass.log.info 'Starting the AirCast server'
 
+# Non-interactive
+options+=(-Z)
+
 # Bind to a specific interface
 if hass.config.has_value 'address'; then
     options+=(-b "$(hass.config.get 'address')")
