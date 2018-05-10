@@ -1,4 +1,5 @@
 ARG BUILD_FROM=hassioaddons/debian-base-amd64:1.0.0
+# hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
 # Setup base system
@@ -7,18 +8,20 @@ RUN \
     \
     && apt-get update \
     \
-    && apt-get install -y --no-install-recommends libssl1.0.0 \
+    && apt-get install -y --no-install-recommends \
+        libssl1.0.0=1.0.1t-1+deb8u8 \
     \
-    && rm -f -r \
-        /tmp/* \
-        /var/lib/apt/lists/*
+    && rm -f -r /tmp/* \
+    && rm -rf /var/lib/apt/lists/* \
+    && rm -rf /var/lib/{apt,dpkg,cache,log}/* \
+    && rm -rf /var/{cache,log}/*
 
 # Copy root filesystem
 COPY rootfs /
 
 # Add aircast binary
 ARG BUILD_ARCH
-ADD bin/aircast-${BUILD_ARCH} /usr/bin/aircast
+COPY bin/aircast-${BUILD_ARCH} /usr/bin/aircast
 
 # Build arugments
 ARG BUILD_DATE
