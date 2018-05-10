@@ -49,6 +49,8 @@ rules:
   key-duplicates:
     level: error
   line-length:
+    ignore: |
+      .github/support.yml
     level: warning
     max: 120
     allow-non-breakable-words: true
