@@ -1,9 +1,9 @@
 {
     "build_from": {
-        "aarch64": "hassioaddons/debian-base-aarch64:1.0.0",
-        "amd64": "hassioaddons/debian-base-amd64:1.0.0",
-        "armhf": "hassioaddons/debian-base-armhf:1.0.0",
-        "i386": "hassioaddons/debian-base-i386:1.0.0"
+        "aarch64": "hassioaddons/ubuntu-base-aarch64:1.1.0",
+        "amd64": "hassioaddons/ubuntu-base-amd64:1.1.0",
+        "armhf": "hassioaddons/ubuntu-base-armhf:1.1.0",
+        "i386": "hassioaddons/ubuntu-base-i386:1.1.0"
     },
     "args": {}
 }
