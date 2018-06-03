@@ -192,6 +192,13 @@ however, all Chromecast devices do properly their own buffering of HTTP audio
 starting to play), then adding silence would have introduced an extra
 unnecessary delay in playback.
 
+## Known issues and limitations
+
+- This add-on does support ARM-based devices, nevertheless, they must
+  at least be an ARMv7 device. (Raspberry Pi 1 and Zero is not supported).
+- The configuration file of AirConnect (used by this add-on) is not
+  exposed to the user. We plan on adding that feature in a future release.
+
 ## Changelog & Releases
 
 This repository keeps a change log using [GitHub's releases][releases]
