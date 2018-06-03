@@ -1,4 +1,4 @@
-ARG BUILD_FROM=hassioaddons/ubuntu-base-amd64:1.1.0
+ARG BUILD_FROM=hassioaddons/ubuntu-base-amd64:2.0.0
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -7,7 +7,7 @@ RUN \
     apt-get update \
     \
     && apt-get install -y --no-install-recommends \
-        libssl1.0.0=1.0.2g-1ubuntu4.12 \
+        libssl1.0.0=1.0.2n-1ubuntu5 \
     \
     && rm -f -r /tmp/* \
     && rm -rf /var/lib/apt/lists/* \
@@ -18,7 +18,7 @@ RUN \
 COPY rootfs /
 
 # Add aircast binary
-ARG BUILD_ARCH
+ARG BUILD_ARCH=amd64
 COPY bin/aircast-${BUILD_ARCH} /usr/bin/aircast
 
 # Build arugments
