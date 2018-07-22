@@ -192,6 +192,15 @@ however, all Chromecast devices do properly their own buffering of HTTP audio
 starting to play), then adding silence would have introduced an extra
 unnecessary delay in playback.
 
+## Tweaking Aircast
+
+Aircast creates a configuration file called `aircast.xml` in your Home
+Assistant configuration directory. This file allows you to tweak each device
+separately. Every time it finds a new device, it will be added to that file.
+
+> **NOTE**: It is HIGHLY recommended to stop the addon before making changes
+to the configuration file manually.
+
 ## Known issues and limitations
 
 - This add-on does support ARM-based devices, nevertheless, they must
