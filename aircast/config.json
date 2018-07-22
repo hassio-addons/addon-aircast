@@ -15,6 +15,9 @@
   "hassio_api": true,
   "homeassistant_api": false,
   "host_network": true,
+  "map": [
+    "config:rw"
+  ],
   "options": {
     "log_level": "info",
     "address": "",

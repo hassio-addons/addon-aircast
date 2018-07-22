@@ -13,6 +13,12 @@ hass.log.info 'Starting the AirCast server'
 # Non-interactive
 options+=(-Z)
 
+# Configuration file
+options+=(-x '/config/aircast.xml')
+
+# Update configuration file when new devices where detected
+options+=(-I)
+
 # Bind to a specific interface
 if hass.config.has_value 'address'; then
     options+=(-b "$(hass.config.get 'address')")
