@@ -9,10 +9,10 @@ RUN \
     && apt-get install -y --no-install-recommends \
         libssl1.0.0=1.0.2n-1ubuntu5.1 \
     \
-    && rm -f -r /tmp/* \
-    && rm -rf /var/lib/apt/lists/* \
-    && rm -rf /var/lib/{apt,dpkg,cache,log}/* \
-    && rm -rf /var/{cache,log}/*
+    && rm -fr \
+        /tmp/* \
+        /var/{cache,log}/* \
+        /var/lib/apt/lists/*
 
 # Copy root filesystem
 COPY rootfs /
