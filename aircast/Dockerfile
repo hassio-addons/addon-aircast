@@ -7,7 +7,7 @@ RUN \
     apt-get update \
     \
     && apt-get install -y --no-install-recommends \
-        libssl1.0.0=1.0.2n-1ubuntu5 \
+        libssl1.0.0=1.0.2n-1ubuntu5.1 \
     \
     && rm -f -r /tmp/* \
     && rm -rf /var/lib/apt/lists/* \
