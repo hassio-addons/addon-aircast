@@ -50,25 +50,21 @@ devices and can try to play audio to them.
 [![Docker Version][armhf-version-shield]][armhf-microbadger]
 [![Docker Layers][armhf-layers-shield]][armhf-microbadger]
 [![Docker Pulls][armhf-pulls-shield]][armhf-dockerhub]
-[![Anchore Image Overview][armhf-anchore-shield]][armhf-anchore]
 
 [![Docker Architecture][aarch64-arch-shield]][aarch64-dockerhub]
 [![Docker Version][aarch64-version-shield]][aarch64-microbadger]
 [![Docker Layers][aarch64-layers-shield]][aarch64-microbadger]
 [![Docker Pulls][aarch64-pulls-shield]][aarch64-dockerhub]
-[![Anchore Image Overview][aarch64-anchore-shield]][aarch64-anchore]
 
 [![Docker Architecture][amd64-arch-shield]][amd64-dockerhub]
 [![Docker Version][amd64-version-shield]][amd64-microbadger]
 [![Docker Layers][amd64-layers-shield]][amd64-microbadger]
 [![Docker Pulls][amd64-pulls-shield]][amd64-dockerhub]
-[![Anchore Image Overview][amd64-anchore-shield]][amd64-anchore]
 
 [![Docker Architecture][i386-arch-shield]][i386-dockerhub]
 [![Docker Version][i386-version-shield]][i386-microbadger]
 [![Docker Layers][i386-layers-shield]][i386-microbadger]
 [![Docker Pulls][i386-pulls-shield]][i386-dockerhub]
-[![Anchore Image Overview][i386-anchore-shield]][i386-anchore]
 
 ## Configuration
 
@@ -286,24 +282,18 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[aarch64-anchore-shield]: https://anchore.io/service/badges/image/67d1185473090e99d5ac5e1bb4d1aa2295117a9bd3d7abbf8cd8a71e331c8388
-[aarch64-anchore]: https://anchore.io/image/dockerhub/hassioaddons%2Faircast-aarch64%3Alatest
 [aarch64-arch-shield]: https://img.shields.io/badge/architecture-aarch64-blue.svg
 [aarch64-dockerhub]: https://hub.docker.com/r/hassioaddons/aircast-aarch64
 [aarch64-layers-shield]: https://images.microbadger.com/badges/image/hassioaddons/aircast-aarch64.svg
 [aarch64-microbadger]: https://microbadger.com/images/hassioaddons/aircast-aarch64
 [aarch64-pulls-shield]: https://img.shields.io/docker/pulls/hassioaddons/aircast-aarch64.svg
 [aarch64-version-shield]: https://images.microbadger.com/badges/version/hassioaddons/aircast-aarch64.svg
-[amd64-anchore-shield]: https://anchore.io/service/badges/image/031c3ec49491c191e22395ba19981eaaabb892802c6698af08c92bfc8319cdc0
-[amd64-anchore]: https://anchore.io/image/dockerhub/hassioaddons%2Faircast-amd64%3Alatest
 [amd64-arch-shield]: https://img.shields.io/badge/architecture-amd64-blue.svg
 [amd64-dockerhub]: https://hub.docker.com/r/hassioaddons/aircast-amd64
 [amd64-layers-shield]: https://images.microbadger.com/badges/image/hassioaddons/aircast-amd64.svg
 [amd64-microbadger]: https://microbadger.com/images/hassioaddons/aircast-amd64
 [amd64-pulls-shield]: https://img.shields.io/docker/pulls/hassioaddons/aircast-amd64.svg
 [amd64-version-shield]: https://images.microbadger.com/badges/version/hassioaddons/aircast-amd64.svg
-[armhf-anchore-shield]: https://anchore.io/service/badges/image/da56ee1d91a6b46756fcbf9d1bf2e90860a37ea992b57fa4627a8394b5fd239c
-[armhf-anchore]: https://anchore.io/image/dockerhub/hassioaddons%2Faircast-armhf%3Alatest
 [armhf-arch-shield]: https://img.shields.io/badge/architecture-armhf-blue.svg
 [armhf-dockerhub]: https://hub.docker.com/r/hassioaddons/aircast-armhf
 [armhf-layers-shield]: https://images.microbadger.com/badges/image/hassioaddons/aircast-armhf.svg
@@ -324,8 +314,6 @@ SOFTWARE.
 [gitlabci-shield]: https://gitlab.com/hassio-addons/addon-aircast/badges/master/pipeline.svg
 [gitlabci]: https://gitlab.com/hassio-addons/addon-aircast/pipelines
 [home-assistant]: https://home-assistant.io
-[i386-anchore-shield]: https://anchore.io/service/badges/image/4b740c5341d0c0aa373563eaf98f3b98655859ee2d5f4e1b226e7976162c9961
-[i386-anchore]: https://anchore.io/image/dockerhub/hassioaddons%2Faircast-i386%3Alatest
 [i386-arch-shield]: https://img.shields.io/badge/architecture-i386-blue.svg
 [i386-dockerhub]: https://hub.docker.com/r/hassioaddons/aircast-i386
 [i386-layers-shield]: https://images.microbadger.com/badges/image/hassioaddons/aircast-i386.svg
