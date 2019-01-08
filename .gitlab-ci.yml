@@ -9,7 +9,7 @@ variables:
   ADDON_ARMV7: "false"
   ADDON_LEGACY_TAGS: "true"
 
-  ADDON_AARCH64_BASE: "hassioaddons/ubuntu-base-aarch64:2.2.0"
-  ADDON_AMD64_BASE: "hassioaddons/ubuntu-base-amd64:2.2.0"
-  ADDON_ARMHF_BASE: "hassioaddons/ubuntu-base-armhf:2.2.0"
-  ADDON_I386_BASE: "hassioaddons/ubuntu-base-i386:2.2.0"
+  ADDON_AARCH64_BASE: "hassioaddons/ubuntu-base-aarch64:2.2.1"
+  ADDON_AMD64_BASE: "hassioaddons/ubuntu-base-amd64:2.2.1"
+  ADDON_ARMHF_BASE: "hassioaddons/ubuntu-base-armhf:2.2.1"
+  ADDON_I386_BASE: "hassioaddons/ubuntu-base-i386:2.2.1"
