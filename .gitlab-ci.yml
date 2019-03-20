@@ -6,10 +6,10 @@ variables:
   ADDON_SLUG: "aircast"
   ADDON_TARGET: "aircast"
 
-  ADDON_ARMV7: "false"
+  ADDON_ARMHF: "false"
   ADDON_LEGACY_TAGS: "true"
 
-  ADDON_AARCH64_BASE: "hassioaddons/ubuntu-base-aarch64:2.3.1"
-  ADDON_AMD64_BASE: "hassioaddons/ubuntu-base-amd64:2.3.1"
-  ADDON_ARMHF_BASE: "hassioaddons/ubuntu-base-armhf:2.3.1"
-  ADDON_I386_BASE: "hassioaddons/ubuntu-base-i386:2.3.1"
+  ADDON_AARCH64_BASE: "hassioaddons/ubuntu-base-aarch64:3.0.0"
+  ADDON_AMD64_BASE: "hassioaddons/ubuntu-base-amd64:3.0.0"
+  ADDON_ARMV7_BASE: "hassioaddons/ubuntu-base-armhf:3.0.0"
+  ADDON_I386_BASE: "hassioaddons/ubuntu-base-i386:3.0.0"
