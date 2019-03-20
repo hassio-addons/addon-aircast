@@ -4,6 +4,12 @@
 ![Project Stage][project-stage-shield]
 [![License][license-shield]](LICENSE.md)
 
+![Supports aarch64 Architecture][aarch64-shield]
+![Supports amd64 Architecture][amd64-shield]
+![Supports armhf Architecture][armhf-shield]
+![Supports armv7 Architecture][armv7-shield]
+![Supports i386 Architecture][i386-shield]
+
 [![GitLab CI][gitlabci-shield]][gitlabci]
 ![Project Maintenance][maintenance-shield]
 [![GitHub Activity][commits-shield]][commits]
@@ -43,28 +49,6 @@ devices and can try to play audio to them.
 
 **NOTE**: Do not add this repository to Hass.io, please use:
 `https://github.com/hassio-addons/repository`.
-
-## Docker status
-
-[![Docker Architecture][armhf-arch-shield]][armhf-dockerhub]
-[![Docker Version][armhf-version-shield]][armhf-microbadger]
-[![Docker Layers][armhf-layers-shield]][armhf-microbadger]
-[![Docker Pulls][armhf-pulls-shield]][armhf-dockerhub]
-
-[![Docker Architecture][aarch64-arch-shield]][aarch64-dockerhub]
-[![Docker Version][aarch64-version-shield]][aarch64-microbadger]
-[![Docker Layers][aarch64-layers-shield]][aarch64-microbadger]
-[![Docker Pulls][aarch64-pulls-shield]][aarch64-dockerhub]
-
-[![Docker Architecture][amd64-arch-shield]][amd64-dockerhub]
-[![Docker Version][amd64-version-shield]][amd64-microbadger]
-[![Docker Layers][amd64-layers-shield]][amd64-microbadger]
-[![Docker Pulls][amd64-pulls-shield]][amd64-dockerhub]
-
-[![Docker Architecture][i386-arch-shield]][i386-dockerhub]
-[![Docker Version][i386-version-shield]][i386-microbadger]
-[![Docker Layers][i386-layers-shield]][i386-microbadger]
-[![Docker Pulls][i386-pulls-shield]][i386-dockerhub]
 
 ## Configuration
 
@@ -282,24 +266,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[aarch64-arch-shield]: https://img.shields.io/badge/architecture-aarch64-blue.svg
-[aarch64-dockerhub]: https://hub.docker.com/r/hassioaddons/aircast-aarch64
-[aarch64-layers-shield]: https://images.microbadger.com/badges/image/hassioaddons/aircast-aarch64.svg
-[aarch64-microbadger]: https://microbadger.com/images/hassioaddons/aircast-aarch64
-[aarch64-pulls-shield]: https://img.shields.io/docker/pulls/hassioaddons/aircast-aarch64.svg
-[aarch64-version-shield]: https://images.microbadger.com/badges/version/hassioaddons/aircast-aarch64.svg
-[amd64-arch-shield]: https://img.shields.io/badge/architecture-amd64-blue.svg
-[amd64-dockerhub]: https://hub.docker.com/r/hassioaddons/aircast-amd64
-[amd64-layers-shield]: https://images.microbadger.com/badges/image/hassioaddons/aircast-amd64.svg
-[amd64-microbadger]: https://microbadger.com/images/hassioaddons/aircast-amd64
-[amd64-pulls-shield]: https://img.shields.io/docker/pulls/hassioaddons/aircast-amd64.svg
-[amd64-version-shield]: https://images.microbadger.com/badges/version/hassioaddons/aircast-amd64.svg
-[armhf-arch-shield]: https://img.shields.io/badge/architecture-armhf-blue.svg
-[armhf-dockerhub]: https://hub.docker.com/r/hassioaddons/aircast-armhf
-[armhf-layers-shield]: https://images.microbadger.com/badges/image/hassioaddons/aircast-armhf.svg
-[armhf-microbadger]: https://microbadger.com/images/hassioaddons/aircast-armhf
-[armhf-pulls-shield]: https://img.shields.io/docker/pulls/hassioaddons/aircast-armhf.svg
-[armhf-version-shield]: https://images.microbadger.com/badges/version/hassioaddons/aircast-armhf.svg
+[aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
+[amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
+[armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
+[armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [buymeacoffee-shield]: https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-2.svg
 [buymeacoffee]: https://www.buymeacoffee.com/frenck
 [commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/addon-aircast.svg
@@ -314,12 +284,7 @@ SOFTWARE.
 [gitlabci-shield]: https://gitlab.com/hassio-addons/addon-aircast/badges/master/pipeline.svg
 [gitlabci]: https://gitlab.com/hassio-addons/addon-aircast/pipelines
 [home-assistant]: https://home-assistant.io
-[i386-arch-shield]: https://img.shields.io/badge/architecture-i386-blue.svg
-[i386-dockerhub]: https://hub.docker.com/r/hassioaddons/aircast-i386
-[i386-layers-shield]: https://images.microbadger.com/badges/image/hassioaddons/aircast-i386.svg
-[i386-microbadger]: https://microbadger.com/images/hassioaddons/aircast-i386
-[i386-pulls-shield]: https://img.shields.io/docker/pulls/hassioaddons/aircast-i386.svg
-[i386-version-shield]: https://images.microbadger.com/badges/version/hassioaddons/aircast-i386.svg
+[i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
 [issue]: https://github.com/hassio-addons/addon-aircast/issues
 [keepchangelog]: http://keepachangelog.com/en/1.0.0/
 [license-shield]: https://img.shields.io/github/license/hassio-addons/addon-aircast.svg
