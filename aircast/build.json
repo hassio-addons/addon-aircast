@@ -1,9 +1,9 @@
 {
     "build_from": {
-        "aarch64": "hassioaddons/ubuntu-base-aarch64:3.1.3",
-        "amd64": "hassioaddons/ubuntu-base-amd64:3.1.3",
-        "armv7": "hassioaddons/ubuntu-base-armv7:3.1.3",
-        "i386": "hassioaddons/ubuntu-base-i386:3.1.3"
+        "aarch64": "hassioaddons/ubuntu-base-aarch64:3.2.0",
+        "amd64": "hassioaddons/ubuntu-base-amd64:3.2.0",
+        "armv7": "hassioaddons/ubuntu-base-armv7:3.2.0",
+        "i386": "hassioaddons/ubuntu-base-i386:3.2.0"
     },
     "args": {}
 }
