@@ -38,7 +38,8 @@ and the real Chromecast player.
 The installation of this add-on is pretty straightforward and not different in
 comparison to installing any other Hass.io add-on.
 
-1. [Add our Hass.io add-ons repository][repository] to your Hass.io instance.
+1. Search for the “AirCast” add-on in the Hass.io 166 add-on store
+   and install it.
 1. Install the "AirCast" add-on.
 1. Start the "AirCast" add-on
 1. Check the logs of the "AirCast" add-on to see if everything went well.
@@ -46,9 +47,6 @@ comparison to installing any other Hass.io add-on.
 After ~30 seconds you should see some log messages appear in the add-on log.
 Using your iOS/Mac/iTunes/Airfoil/other clients, you should now see new AirPlay
 devices and can try to play audio to them.
-
-**NOTE**: Do not add this repository to Hass.io, please use:
-`https://github.com/hassio-addons/repository`.
 
 ## Configuration
 
