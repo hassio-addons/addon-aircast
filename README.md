@@ -38,7 +38,7 @@ and the real Chromecast player.
 The installation of this add-on is pretty straightforward and not different in
 comparison to installing any other Hass.io add-on.
 
-1. Search for the “AirCast” add-on in the Hass.io 166 add-on store
+1. Search for the “AirCast” add-on in the Hass.io add-on store
    and install it.
 1. Install the "AirCast" add-on.
 1. Start the "AirCast" add-on
