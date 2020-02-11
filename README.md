@@ -54,14 +54,12 @@ devices and can try to play audio to them.
 
 Example add-on configuration:
 
-```json
-{
-  "log_level": "info",
-  "address": "192.168.1.234",
-  "latency_rtp": 5000,
-  "latency_http": 0,
-  "drift": true
-}
+```yaml
+log_level: info
+address: 192.168.1.234
+latency_rtp: 5000
+latency_http: 0
+drift: true
 ```
 
 **Note**: _This is just an example, don't copy and past it! Create your own!_
