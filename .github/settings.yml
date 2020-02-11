@@ -1,8 +1,8 @@
 ---
 repository:
-  description: "AirCast - Community Hass.io Add-on for Home Assistant"
+  description: "AirCast - Community Home Assistant Add-ons"
   homepage: https://addons.community
-  topics: airplay, chromecast, bridge, hassio-addons, hassio, hass, home-assistant, homeassistant
+  topics: airplay, chromecast, bridge, addon, addons, home-assistant, homeassistant
   private: false
   has_issues: true
   has_projects: false
