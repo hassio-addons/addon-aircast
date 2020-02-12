@@ -1,6 +1,6 @@
 ---
 repository:
-  description: "AirCast - Community Home Assistant Add-ons"
+  description: "AirCast - Home Assistant Community Add-ons"
   homepage: https://addons.community
   topics: airplay, chromecast, bridge, addon, addons, home-assistant, homeassistant
   private: false

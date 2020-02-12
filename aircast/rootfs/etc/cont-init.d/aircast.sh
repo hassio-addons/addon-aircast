@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Community Home Assistant Add-on: AirCast
+# Home Assistant Community Add-on: AirCast
 # Checks latency settings before starting the AirCast server
 # ==============================================================================
 declare latency
