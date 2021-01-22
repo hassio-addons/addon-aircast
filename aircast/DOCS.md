@@ -49,7 +49,7 @@ dealing with an unknown issue. Possible values are:
 - `debug`: Shows detailed debug information.
 - `info`: Normal (usually) interesting events.
 - `warning`: Exceptional occurrences that are not errors.
-- `error`:  Runtime errors that do not require immediate action.
+- `error`: Runtime errors that do not require immediate action.
 - `fatal`: Something went terribly wrong. Add-on becomes unusable.
 
 Please note that each level automatically includes log messages from a
@@ -137,12 +137,12 @@ is larger than the buffer in the Chromecast player, playback will stop by
 lack of audio. Note that `latency_rtp` does not delay playback start.
 
 > **Note**: `latency_rtp` and `latency_http` could have been merged into a
-single `latency` parameter which would have set the max RTP frames holding time
-as well as the duration of the initial additional silence (delay),
-however, all Chromecast devices do properly their own buffering of HTTP audio
-(i.e., they wait until they have received a certain amount of audio before
-starting to play), then adding silence would have introduced an extra
-unnecessary delay in playback.
+> single `latency` parameter which would have set the max RTP frames holding time
+> as well as the duration of the initial additional silence (delay),
+> however, all Chromecast devices do properly their own buffering of HTTP audio
+> (i.e., they wait until they have received a certain amount of audio before
+> starting to play), then adding silence would have introduced an extra
+> unnecessary delay in playback.
 
 ## Tweaking Aircast
 
@@ -151,7 +151,7 @@ Assistant configuration directory. This file allows you to tweak each device
 separately. Every time it finds a new device, it will be added to that file.
 
 > **NOTE**: It is HIGHLY recommended to stop the addon before making changes
-to the configuration file manually.
+> to the configuration file manually.
 
 ## Known issues and limitations
 
@@ -167,12 +167,12 @@ functionality. The format of the log is based on
 [Keep a Changelog][keepchangelog].
 
 Releases are based on [Semantic Versioning][semver], and use the format
-of ``MAJOR.MINOR.PATCH``. In a nutshell, the version will be incremented
+of `MAJOR.MINOR.PATCH`. In a nutshell, the version will be incremented
 based on the following:
 
-- ``MAJOR``: Incompatible or major changes.
-- ``MINOR``: Backwards-compatible new features and enhancements.
-- ``PATCH``: Backwards-compatible bugfixes and package updates.
+- `MAJOR`: Incompatible or major changes.
+- `MINOR`: Backwards-compatible new features and enhancements.
+- `PATCH`: Backwards-compatible bugfixes and package updates.
 
 ## Support
 
