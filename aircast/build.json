@@ -4,6 +4,5 @@
     "amd64": "hassioaddons/ubuntu-base-amd64:5.2.2",
     "armv7": "hassioaddons/ubuntu-base-armv7:5.2.2",
     "i386": "hassioaddons/ubuntu-base-i386:5.2.2"
-  },
-  "args": {}
+  }
 }
