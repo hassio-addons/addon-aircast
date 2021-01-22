@@ -163,8 +163,7 @@ separately. Every time it finds a new device, it will be added to that file.
 ## Changelog & Releases
 
 This repository keeps a change log using [GitHub's releases][releases]
-functionality. The format of the log is based on
-[Keep a Changelog][keepchangelog].
+functionality.
 
 Releases are based on [Semantic Versioning][semver], and use the format
 of `MAJOR.MINOR.PATCH`. In a nutshell, the version will be incremented
@@ -223,11 +222,10 @@ SOFTWARE.
 [contributors]: https://github.com/hassio-addons/addon-aircast/graphs/contributors
 [discord-ha]: https://discord.gg/c5DvZ4e
 [discord]: https://discord.me/hassioaddons
-[docs]: https://github.com/hassio-addons/addon-aircast/blob/master/aircast/DOCS.md
+[docs]: https://github.com/hassio-addons/addon-aircast/blob/main/aircast/DOCS.md
 [forum]: https://community.home-assistant.io/t/home-assistant-community-add-on-aircast/36742?u=frenck
 [frenck]: https://github.com/frenck
 [issue]: https://github.com/hassio-addons/addon-aircast/issues
-[keepchangelog]: http://keepachangelog.com/en/1.0.0/
 [reddit]: https://reddit.com/r/homeassistant
 [releases]: https://github.com/hassio-addons/addon-aircast/releases
 [semver]: http://semver.org/spec/v2.0.0.htm
