@@ -4,3 +4,6 @@ build_from:
   amd64: ghcr.io/hassio-addons/debian-base/amd64:5.3.0
   armv7: ghcr.io/hassio-addons/debian-base/armv7:5.3.0
   i386: ghcr.io/hassio-addons/debian-base/i386:5.3.0
+codenotary:
+  base_image: codenotary@frenck.dev
+  signer: codenotary@frenck.dev
