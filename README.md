@@ -33,6 +33,8 @@ It detects Chromecast players in your network and creates virtual AirPlay
 devices for each of them. It acts as a bridge between the AirPlay client
 and the real Chromecast player.
 
+The AirCast add-on is based on the excellent [AirConnect][airconnect] project.
+
 [:books: Read the full add-on documentation][docs]
 
 ## Support
@@ -99,6 +101,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
+[airconnect]: https://github.com/philippe44/AirConnect
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
