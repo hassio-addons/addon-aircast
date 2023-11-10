@@ -14,7 +14,8 @@ arch:
 hassio_api: true
 host_network: true
 map:
-  - config:rw
+  - addon_config:rw
+  - homeassistant_config:rw
 options:
   latency_rtp: 0
   latency_http: 0

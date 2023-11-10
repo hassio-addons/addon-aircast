@@ -6,6 +6,14 @@
 # ==============================================================================
 declare latency
 
+# Migrate add-on data from the Home Assistant config folder,
+# to the add-on configuration folder.
+if ! bashio::fs.directory_exists '/config/aircast.xml' \
+    && bashio::fs.file_exists '/homeassistant/aircast.xml'; then
+    mv /homeassistant/aircast.xml /config/aircast.xml \
+        || bashio::exit.nok "Failed to migrate Aircast configuration"
+fi
+
 # Create a configuration file, if it does not exist yet
 if ! bashio::fs.file_exists '/config/aircast.xml'; then
     cp /etc/aircast.xml /config/aircast.xml
