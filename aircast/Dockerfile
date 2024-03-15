@@ -10,7 +10,7 @@ COPY rootfs /
 
 # Setup base
 ARG BUILD_ARCH=amd64
-ARG AIRCAST_VERSION="1.7.0"
+ARG AIRCAST_VERSION="1.8.3"
 RUN \
     apt-get update \
     && apt-get install -y --no-install-recommends \
