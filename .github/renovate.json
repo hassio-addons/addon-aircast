@@ -2,19 +2,13 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "rebaseWhen": "behind-base-branch",
   "dependencyDashboard": true,
-  "labels": [
-    "dependencies",
-    "no-stale"
-  ],
+  "labels": ["dependencies", "no-stale"],
   "commitMessagePrefix": "⬆️",
   "commitMessageTopic": "{{depName}}",
   "customManagers": [
     {
       "customType": "regex",
-      "managerFilePatterns": [
-        "//Dockerfile$/",
-        "//build.yaml$/"
-      ],
+      "managerFilePatterns": ["//Dockerfile$/", "//build.yaml$/"],
       "matchStringsStrategy": "any",
       "matchStrings": [
         "ARG BUILD_FROM=(?<depName>.*?):(?<currentValue>.*?)\\s+",
@@ -24,9 +18,7 @@
     },
     {
       "customType": "regex",
-      "managerFilePatterns": [
-        "//Dockerfile$/"
-      ],
+      "managerFilePatterns": ["//Dockerfile$/"],
       "matchStrings": [
         "ARG AIRCAST_VERSION=[\"']?(?<currentValue>.+?)[\"']?\\s+"
       ],
@@ -37,18 +29,12 @@
   "packageRules": [
     {
       "groupName": "Add-on base image",
-      "matchDatasources": [
-        "docker"
-      ]
+      "matchDatasources": ["docker"]
     },
     {
       "groupName": "Add-on base image",
-      "matchDatasources": [
-        "docker"
-      ],
-      "matchUpdateTypes": [
-        "patch"
-      ],
+      "matchDatasources": ["docker"],
+      "matchUpdateTypes": ["patch"],
       "automerge": true
     }
   ]
