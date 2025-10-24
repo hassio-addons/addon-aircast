@@ -22,7 +22,6 @@ RUN \
     \
     && if [ "${BUILD_ARCH}" = "aarch64" ]; then AIRCONNECT_ARCH="aarch64"; \
     elif [ "${BUILD_ARCH}" = "amd64" ]; then AIRCONNECT_ARCH="x86_64"; \
-    elif [ "${BUILD_ARCH}" = "armv7" ]; then AIRCONNECT_ARCH="arm"; fi \
     \
     && cp "/tmp/aircast-linux-${AIRCONNECT_ARCH}-static" /usr/bin/aircast \
     && chmod a+x /usr/bin/aircast \

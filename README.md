@@ -6,9 +6,6 @@
 
 ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]
-![Supports armhf Architecture][armhf-shield]
-![Supports armv7 Architecture][armv7-shield]
-![Supports i386 Architecture][i386-shield]
 
 [![Github Actions][github-actions-shield]][github-actions]
 ![Project Maintenance][maintenance-shield]
@@ -103,8 +100,6 @@ SOFTWARE.
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [airconnect]: https://github.com/philippe44/AirConnect
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
-[armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
-[armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/addon-aircast.svg
 [commits]: https://github.com/hassio-addons/addon-aircast/commits/main
 [contributors]: https://github.com/hassio-addons/addon-aircast/graphs/contributors
@@ -119,7 +114,6 @@ SOFTWARE.
 [github-actions]: https://github.com/hassio-addons/addon-aircast/actions
 [github-sponsors-shield]: https://frenck.dev/wp-content/uploads/2019/12/github_sponsor.png
 [github-sponsors]: https://github.com/sponsors/frenck
-[i386-shield]: https://img.shields.io/badge/i386-no-red.svg
 [issue]: https://github.com/hassio-addons/addon-aircast/issues
 [license-shield]: https://img.shields.io/github/license/hassio-addons/addon-aircast.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2025.svg
