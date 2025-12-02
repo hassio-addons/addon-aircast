@@ -1,0 +1,17 @@
+#!/command/with-contenv bashio
+# shellcheck shell=bash
+# ==============================================================================
+# Home Assistant Community Add-on: AirCast
+# Runs the ESPHome AirPlay Bridge (if enabled)
+# ==============================================================================
+
+# Check if ESPHome support is enabled
+if bashio::config.false 'esphome_enabled'; then
+    bashio::log.info 'ESPHome support is disabled, skipping ESPHome bridge'
+    exec sleep infinity
+fi
+
+bashio::log.info 'Starting ESPHome AirPlay Bridge...'
+
+# Run the ESPHome AirPlay bridge
+exec /usr/bin/python3 /usr/bin/esphome-airplay-bridge.py

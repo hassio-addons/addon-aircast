@@ -18,9 +18,11 @@ options:
   latency_rtp: 0
   latency_http: 0
   drift: false
+  esphome_enabled: false
 schema:
   log_level: list(trace|debug|info|notice|warning|error|fatal)?
   address: str?
   latency_rtp: int
   latency_http: int
   drift: bool
+  esphome_enabled: bool

@@ -1,0 +1,20 @@
+#!/command/with-contenv bashio
+# shellcheck shell=bash
+# ==============================================================================
+# Home Assistant Community Add-on: AirCast
+# Take down the S6 supervision tree when ESPHome bridge fails
+# ==============================================================================
+declare exit_code
+readonly exit_code_container=$(</run/s6-linux-init-container-results/exitcode)
+readonly exit_code_service="${1}"
+readonly exit_code_signal="${2}"
+readonly service="ESPHome AirPlay Bridge"
+
+bashio::log.info "Service ${service} exited with code ${exit_code_service}"
+
+# Only handle non-zero exits from the service if ESPHome is enabled
+if bashio::config.true 'esphome_enabled' && [[ "${exit_code_service}" -ne 0 ]]; then
+    bashio::log.warning "${service} crashed, but will not bring down the add-on"
+fi
+
+exit 0

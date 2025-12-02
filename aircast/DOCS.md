@@ -40,6 +40,7 @@ address: 192.168.1.234
 latency_rtp: 5000
 latency_http: 0
 drift: true
+esphome_enabled: true
 ```
 
 **Note**: _This is just an example, don't copy and past it! Create your own!_
@@ -91,6 +92,16 @@ cases.
 ### Option: `drift`
 
 Set to `true` to let timing reference drift (no click).
+
+### Option: `esphome_enabled`
+
+Set to `true` to enable ESPHome media player support. When enabled, the add-on
+will discover ESPHome media players on your Home Assistant instance and create
+virtual AirPlay receivers for them.
+
+**Note**: ESPHome support is experimental and works differently than Chromecast
+support. Audio is streamed through the add-on via HTTP and sent to ESPHome
+devices using Home Assistant's API.
 
 ## Latency options explained
 

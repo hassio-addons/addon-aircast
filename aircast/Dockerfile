@@ -15,6 +15,9 @@ RUN \
     apt-get update \
     && apt-get install -y --no-install-recommends \
         unzip=6.0-29 \
+        python3=3.13.1-1 \
+        python3-pip=24.3.1+dfsg-1 \
+        python3-requests=2.32.3+dfsg-1 \
     \
     && curl -J -L -o /tmp/airconnect.zip \
       "https://github.com/philippe44/AirConnect/releases/download/${AIRCAST_VERSION}/AirConnect-${AIRCAST_VERSION}.zip" \
@@ -25,6 +28,8 @@ RUN \
     \
     && cp "/tmp/aircast-linux-${AIRCONNECT_ARCH}-static" /usr/bin/aircast \
     && chmod a+x /usr/bin/aircast \
+    && chmod a+x /usr/bin/esphome-discovery.py \
+    && chmod a+x /usr/bin/esphome-airplay-bridge.py \
     \
     && apt-get purge -y --auto-remove \
         unzip \
