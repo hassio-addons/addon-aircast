@@ -18,6 +18,25 @@ RUN \
         python3=3.13.1-1 \
         python3-pip=24.3.1+dfsg-1 \
         python3-requests=2.32.3+dfsg-1 \
+        ffmpeg=7:7.1-3 \
+        build-essential=12.10 \
+        git=1:2.47.1-1 \
+        autoconf=2.72-3 \
+        automake=1:1.16.5-1.3 \
+        libtool=2.4.7-8 \
+        libpopt-dev=1.19+dfsg-1+b1 \
+        libconfig-dev=1.5-0.4 \
+        libasound2-dev=1.2.12-1+b1 \
+        avahi-daemon=0.8-13+b2 \
+        libavahi-client-dev=0.8-13+b2 \
+        libssl-dev=3.3.2-2 \
+        libsoxr-dev=0.1.3-4+b3 \
+        libplist-dev=2.6.0-3 \
+        libsodium-dev=1.0.20-1 \
+        libavahi-compat-libdnssd-dev=0.8-13+b2 \
+        libavformat-dev=7:7.1-3 \
+        libasound2-plugins=1.2.12-2 \
+        xxd=2:9.1.0861-1 \
     \
     && curl -J -L -o /tmp/airconnect.zip \
       "https://github.com/philippe44/AirConnect/releases/download/${AIRCAST_VERSION}/AirConnect-${AIRCAST_VERSION}.zip" \
@@ -28,11 +47,50 @@ RUN \
     \
     && cp "/tmp/aircast-linux-${AIRCONNECT_ARCH}-static" /usr/bin/aircast \
     && chmod a+x /usr/bin/aircast \
+    \
+    && git clone https://github.com/mikebrady/shairport-sync.git /tmp/shairport-sync \
+    && cd /tmp/shairport-sync \
+    && autoreconf -fi \
+    && ./configure \
+        --with-alsa \
+        --with-avahi \
+        --with-ssl=openssl \
+        --with-soxr \
+        --with-metadata \
+        --with-stdout \
+        --with-pipe \
+        --sysconfdir=/etc \
+    && make -j$(nproc) \
+    && make install \
+    \
     && chmod a+x /usr/bin/esphome-discovery.py \
     && chmod a+x /usr/bin/esphome-airplay-bridge.py \
+    && chmod a+x /usr/bin/shairport-manager.py \
+    && chmod a+x /usr/bin/shairport-play-handler.py \
     \
     && apt-get purge -y --auto-remove \
         unzip \
+        build-essential \
+        git \
+        autoconf \
+        automake \
+        libtool \
+        libpopt-dev \
+        libconfig-dev \
+        libasound2-dev \
+        libavahi-client-dev \
+        libssl-dev \
+        libsoxr-dev \
+        libplist-dev \
+        libsodium-dev \
+        libavahi-compat-libdnssd-dev \
+        libavformat-dev \
+    && apt-mark manual \
+        ffmpeg \
+        avahi-daemon \
+        libasound2-plugins \
+        python3 \
+        python3-requests \
     && rm -fr \
         /tmp/* \
         /var/{cache,log}/* \

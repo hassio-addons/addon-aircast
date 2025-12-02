@@ -97,11 +97,24 @@ Set to `true` to let timing reference drift (no click).
 
 Set to `true` to enable ESPHome media player support. When enabled, the add-on
 will discover ESPHome media players on your Home Assistant instance and create
-virtual AirPlay receivers for them.
+virtual AirPlay receivers for them using Shairport-Sync.
 
-**Note**: ESPHome support is experimental and works differently than Chromecast
-support. Audio is streamed through the add-on via HTTP and sent to ESPHome
-devices using Home Assistant's API.
+**How it works:**
+1. The add-on discovers your ESPHome media players via Home Assistant API
+2. Creates a Shairport-Sync AirPlay receiver for each ESPHome device
+3. When you play audio from iOS/Mac to an ESPHome device:
+   - Shairport-Sync receives the AirPlay audio stream
+   - Audio is transcoded to WAV format and served via HTTP
+   - The add-on sends a `play_media` command to your ESPHome device
+   - Your ESPHome device fetches and plays the audio
+
+**Requirements:**
+- ESPHome media players must be configured with media_player component
+- Devices should support HTTP audio streaming (WAV format recommended)
+- Network connectivity between add-on and ESPHome devices
+
+**Note**: ESPHome support uses Shairport-Sync and works independently from
+Chromecast support. Both can be enabled simultaneously.
 
 ## Latency options explained
 

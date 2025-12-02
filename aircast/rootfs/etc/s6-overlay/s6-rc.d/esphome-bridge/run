@@ -2,7 +2,7 @@
 # shellcheck shell=bash
 # ==============================================================================
 # Home Assistant Community Add-on: AirCast
-# Runs the ESPHome AirPlay Bridge (if enabled)
+# Runs the ESPHome AirPlay Bridge via Shairport-Sync (if enabled)
 # ==============================================================================
 
 # Check if ESPHome support is enabled
@@ -11,7 +11,11 @@ if bashio::config.false 'esphome_enabled'; then
     exec sleep infinity
 fi
 
-bashio::log.info 'Starting ESPHome AirPlay Bridge...'
+bashio::log.info 'Starting ESPHome AirPlay Bridge (Shairport-Sync)...'
 
-# Run the ESPHome AirPlay bridge
-exec /usr/bin/python3 /usr/bin/esphome-airplay-bridge.py
+# Start Avahi daemon for mDNS (required for AirPlay discovery)
+bashio::log.info 'Starting Avahi daemon...'
+avahi-daemon --daemonize
+
+# Run the Shairport-Sync manager for ESPHome devices
+exec /usr/bin/python3 /usr/bin/shairport-manager.py
