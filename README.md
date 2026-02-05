@@ -1,4 +1,4 @@
-# Home Assistant Community Add-on: AirCast
+# Home Assistant Community App: AirCast
 
 [![GitHub Release][releases-shield]][releases]
 ![Project Stage][project-stage-shield]
@@ -23,16 +23,16 @@ AirPlay capabilities for your Chromecast players.
 ## About
 
 Apple devices use AirPlay to send audio to other devices, but this is not
-compatible with Google's Chromecast. This add-on tries to solve this
+compatible with Google's Chromecast. This app tries to solve this
 compatibility gap.
 
 It detects Chromecast players in your network and creates virtual AirPlay
 devices for each of them. It acts as a bridge between the AirPlay client
 and the real Chromecast player.
 
-The AirCast add-on is based on the excellent [AirConnect][airconnect] project.
+The AirCast app is based on the excellent [AirConnect][airconnect] project.
 
-[:books: Read the full add-on documentation][docs]
+[:books: Read the full app documentation][docs]
 
 ## Support
 
@@ -40,7 +40,7 @@ Got questions?
 
 You have several options to get them answered:
 
-- The [Home Assistant Community Add-ons Discord chat server][discord] for add-on
+- The [Home Assistant Community Apps Discord chat server][discord] for app
   support and feature requests.
 - The [Home Assistant Discord chat server][discord-ha] for general Home
   Assistant discussions and questions.
@@ -66,18 +66,18 @@ The original setup of this repository is by [Franck Nijhof][frenck].
 For a full list of all authors and contributors,
 check [the contributor's page][contributors].
 
-## We have got some Home Assistant add-ons for you
+## We have got some Home Assistant apps for you
 
 Want some more functionality to your Home Assistant instance?
 
-We have created multiple add-ons for Home Assistant. For a full list, check out
+We have created multiple apps for Home Assistant. For a full list, check out
 our [GitHub Repository][repository].
 
 ## License
 
 MIT License
 
-Copyright (c) 2017-2025 Franck Nijhof
+Copyright (c) 2017-2026 Franck Nijhof
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -100,27 +100,27 @@ SOFTWARE.
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [airconnect]: https://github.com/philippe44/AirConnect
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
-[commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/addon-aircast.svg
-[commits]: https://github.com/hassio-addons/addon-aircast/commits/main
-[contributors]: https://github.com/hassio-addons/addon-aircast/graphs/contributors
+[commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/app-aircast.svg
+[commits]: https://github.com/hassio-addons/app-aircast/commits/main
+[contributors]: https://github.com/hassio-addons/app-aircast/graphs/contributors
 [discord-ha]: https://discord.gg/c5DvZ4e
 [discord-shield]: https://img.shields.io/discord/478094546522079232.svg
 [discord]: https://discord.me/hassioaddons
-[docs]: https://github.com/hassio-addons/addon-aircast/blob/main/aircast/DOCS.md
+[docs]: https://github.com/hassio-addons/app-aircast/blob/main/aircast/DOCS.md
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
-[forum]: https://community.home-assistant.io/t/home-assistant-community-add-on-aircast/36742?u=frenck
+[forum]: https://community.home-assistant.io/t/home-assistant-community-app-aircast/36742?u=frenck
 [frenck]: https://github.com/frenck
-[github-actions-shield]: https://github.com/hassio-addons/addon-aircast/workflows/CI/badge.svg
-[github-actions]: https://github.com/hassio-addons/addon-aircast/actions
+[github-actions-shield]: https://github.com/hassio-addons/app-aircast/workflows/CI/badge.svg
+[github-actions]: https://github.com/hassio-addons/app-aircast/actions
 [github-sponsors-shield]: https://frenck.dev/wp-content/uploads/2019/12/github_sponsor.png
 [github-sponsors]: https://github.com/sponsors/frenck
-[issue]: https://github.com/hassio-addons/addon-aircast/issues
-[license-shield]: https://img.shields.io/github/license/hassio-addons/addon-aircast.svg
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2025.svg
+[issue]: https://github.com/hassio-addons/app-aircast/issues
+[license-shield]: https://img.shields.io/github/license/hassio-addons/app-aircast.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2026.svg
 [patreon-shield]: https://frenck.dev/wp-content/uploads/2019/12/patreon.png
 [patreon]: https://www.patreon.com/frenck
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
 [reddit]: https://reddit.com/r/homeassistant
-[releases-shield]: https://img.shields.io/github/release/hassio-addons/addon-aircast.svg
-[releases]: https://github.com/hassio-addons/addon-aircast/releases
+[releases-shield]: https://img.shields.io/github/release/hassio-addons/app-aircast.svg
+[releases]: https://github.com/hassio-addons/app-aircast/releases
 [repository]: https://github.com/hassio-addons/repository
