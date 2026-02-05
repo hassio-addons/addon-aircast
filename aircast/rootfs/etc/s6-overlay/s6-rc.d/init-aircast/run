@@ -1,13 +1,13 @@
 #!/command/with-contenv bashio
 # shellcheck shell=bash
 # ==============================================================================
-# Home Assistant Community Add-on: AirCast
+# Home Assistant Community App: AirCast
 # Checks latency settings before starting the AirCast server
 # ==============================================================================
 declare latency
 
-# Migrate add-on data from the Home Assistant config folder,
-# to the add-on configuration folder.
+# Migrate app data from the Home Assistant config folder,
+# to the app configuration folder.
 if ! bashio::fs.file_exists '/config/aircast.xml' \
     && bashio::fs.file_exists '/homeassistant/aircast.xml'; then
     mv /homeassistant/aircast.xml /config/aircast.xml \

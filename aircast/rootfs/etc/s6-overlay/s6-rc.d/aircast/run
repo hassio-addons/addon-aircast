@@ -1,7 +1,7 @@
 #!/command/with-contenv bashio
 # shellcheck shell=bash
 # ==============================================================================
-# Home Assistant Community Add-on: AirCast
+# Home Assistant Community App: AirCast
 # Runs the AirCast server
 # ==============================================================================
 declare -a options
